@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../../sea-modules/angular/angularjs/1.1.5/angular.js"></script>
+    <script src="CartController.js"></script>
+</head>
+<body>
+
+<div ng-controller="CartController">
+  <div ng-repeat="item in items">
+
+      <span>{{item.title}}</span>
+      <input ng-model="item.quantity"/>
+      <span>{{item.price | currency}}</span>//currency是一个过滤器，可以把钱币转化成美元
+      <span>{{item.price*item.quantity | currency}}</span>
+  </div>
+    <div>Total:{{totalCart() | currency}}</div>
+    <div>Discount :{{bill.discount | currency}}</div>
+    <div>Subtotal {{subtotal() | currency}}</div>
+</div>
+
+</body>
+</html>

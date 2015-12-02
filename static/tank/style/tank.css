@@ -1,0 +1,19 @@
+body{
+    background-color:#9f9f9f;
+}
+#tankPanel{
+    position:absolute;
+    width:60%;
+    height:90%;
+    left:22%;
+    top:5%;
+    background-color:gainsboro;
+}
+
+#tank{
+    background-image:url(../imgs/tank.png);
+    width:40px;
+    height:38px;
+    background-position-y:0px;
+    position:absolute;
+}

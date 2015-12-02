@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/angularjs.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/angularTest/CartController.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/angularTest/controller.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/angularTest/detail.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/angularTest/list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/tank/src/controller/tank.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/tank/src/service/bombService.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/tank/src/service/enemyTank.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/tank/src/service/tankService.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/tank/src/service/test.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/static/tank/src/tool/tool.js" charset="UTF-8" />
+  </component>
+</project>
