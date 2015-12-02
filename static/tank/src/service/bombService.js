@@ -180,11 +180,12 @@ function EnemyBullet(tank,myTank)
 
                         for(var i=0;i<enemyTanks.length;i++)
                         {
-                            if(tool.$$('tank') && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
+                            if(enemyTanks[i].enemyTank && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
                             {
                                 console.log("我已经碰到我的坦克了");
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
+                                enemyTanks[i].enemyTank=null;
                             }
                         }
                     },myTank.bulletSpeed);
@@ -210,11 +211,12 @@ function EnemyBullet(tank,myTank)
 
                         for(var i=0;i<enemyTanks.length;i++)
                         {
-                            if(tool.$$('tank') && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
+                            if(enemyTanks[i].enemyTank && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
                             {
                                 console.log("我已经碰到我的坦克了");
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
+                                enemyTanks[i].enemyTank=null;
                             }
                         }
                     },myTank.bulletSpeed);
@@ -239,11 +241,12 @@ function EnemyBullet(tank,myTank)
                         }
                         for(var i=0;i<enemyTanks.length;i++)
                         {
-                            if(tool.$$('tank') && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
+                            if(enemyTanks[i].enemyTank && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
                             {
                                 console.log("我已经碰到我的坦克了");
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
+                                enemyTanks[i].enemyTank=null;
                             }
                         }
                     },myTank.bulletSpeed);
@@ -269,11 +272,12 @@ function EnemyBullet(tank,myTank)
 
                         for(var i=0;i<enemyTanks.length;i++)
                         {
-                            if(tool.$$('tank') && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
+                            if(enemyTanks[i].enemyTank && Math.abs(enemyTanks[i].x-that.x)<19 && Math.abs(enemyTanks[i].y-that.y)<19)
                             {
                                 console.log("我已经碰到我的坦克了");
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
+                                enemyTanks[i].enemyTank=null;
                             }
                         }
                     },myTank.bulletSpeed);
