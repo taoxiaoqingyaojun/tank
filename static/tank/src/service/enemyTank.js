@@ -54,28 +54,40 @@ define(function(require,exports,module) {
             /*现在我们来随机的开始移动*/
             var interval=setInterval(function(){
 
+                if(that==null)
+                {
+
+                    //如果对象已经置空，就开始结束循环
+                    clearInterval(interval);
+                }
+
                 switch (that.directions)
                 {
+
                     /*向上面的方向*/
                     case 0:
+                        console.log("现在的that为:"+that);
                         that.enemyTank.style.backgroundPositionY='152px';
                         if(that.y>0)
                             that.y-=2;
                         break;
                     //方向向下面的方向
                     case 1:
+                        console.log("现在的that为:"+that);
                         that.enemyTank.style.backgroundPositionY='76px';
                         if(that.y<540)
                             that.y+=2;
                         break;
                     //放向向左边边的方向
                     case 2:
+                        console.log("现在的that为:"+that);
                         that.enemyTank.style.backgroundPositionY='38px';
                         if(that.x>0)
                             that.x-=2;
                         break;
                     //方向向右边的方向
                     case 3:
+                        console.log("现在的that为:"+that);
                         that.enemyTank.style.backgroundPositionY='114px';
                         if(that.x<780)
                             that.x+=2;
@@ -85,6 +97,8 @@ define(function(require,exports,module) {
 
                 that.enemyTank.style.left=that.x+'px';
                 that.enemyTank.style.top=that.y+'px';
+
+
             },that.speed);
         }
 

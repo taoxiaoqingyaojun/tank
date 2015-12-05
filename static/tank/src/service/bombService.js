@@ -186,6 +186,8 @@ function EnemyBullet(tank,myTank)
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
+                                enemyTanks[i]=null;
+                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);
@@ -217,6 +219,8 @@ function EnemyBullet(tank,myTank)
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
+                                enemyTanks[i]=null;
+                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);
@@ -247,6 +251,8 @@ function EnemyBullet(tank,myTank)
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
+                                enemyTanks[i]=null;
+                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);
@@ -278,6 +284,8 @@ function EnemyBullet(tank,myTank)
                                 new Bomb(that.y,that.x).createBomb();
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
+                                enemyTanks[i]=null;
+                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);

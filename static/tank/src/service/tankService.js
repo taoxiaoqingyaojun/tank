@@ -71,27 +71,29 @@ define(function(require,exports,module){
 
         /*发射子弹*/
         this.keyDown=function(enemyTanks){
+            if(that!=null)//判断该对象是不是为空，如果为空则不执行
+            {
+                $(document).ready(function(){
 
-            $(document).ready(function(){
+                    $(document).keydown(function(){
 
-                $(document).keydown(function(){
-
-                    if(event.keyCode==32)
-                    {
-
-                        if(that.bulletCount>0)
+                        if(event.keyCode==32)
                         {
-                            /*创建一个子弹*/
-                            var bullet=new tankAttribute.MyBullet(that,enemyTanks);
-                            bullet.createBullet();
-                        }
 
-                    }
-                    that.move(event);
+                            if(that.bulletCount>0)
+                            {
+                                /*创建一个子弹*/
+                                var bullet=new tankAttribute.MyBullet(that,enemyTanks);
+                                bullet.createBullet();
+                            }
+
+                        }
+                        that.move(event);
+                    });
+
                 });
 
-            });
-
+            }
         };
 
         /*this.bullet=function(){
