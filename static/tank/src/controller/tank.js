@@ -19,10 +19,10 @@ define(function(require){
 
     /*现在我来开始创建敌人的坦克*/
     enemyTank=new EnemyTank(50,50,50,0,tank);
-/*    enemyTank1=new EnemyTank(100,50,50,0,tank);
-    enemyTank2=new EnemyTank(150,50,50,0,tank);*/
+    enemyTank1=new EnemyTank(100,50,50,0,tank);
+    enemyTank2=new EnemyTank(150,50,50,0,tank);
 
- var enemyTanks=[enemyTank];
+ var enemyTanks=[enemyTank,enemyTank1,enemyTank2];
 
     tank.keyDown(enemyTanks);
 

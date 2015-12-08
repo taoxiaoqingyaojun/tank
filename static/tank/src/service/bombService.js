@@ -187,7 +187,6 @@ function EnemyBullet(tank,myTank)
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
                                 enemyTanks[i]=null;
-                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);
@@ -220,7 +219,6 @@ function EnemyBullet(tank,myTank)
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
                                 enemyTanks[i]=null;
-                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);
@@ -252,7 +250,6 @@ function EnemyBullet(tank,myTank)
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
                                 enemyTanks[i]=null;
-                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);
@@ -285,7 +282,6 @@ function EnemyBullet(tank,myTank)
                                 tool.$$('tankPanel').removeChild(enemyTanks[i].enemyTank);
                                 enemyTanks[i].enemyTank=null;
                                 enemyTanks[i]=null;
-                                enemyTanks.splice(i);
                             }
                         }
                     },myTank.bulletSpeed);

@@ -107,11 +107,15 @@ define(function(require,exports,module) {
 
             /*现在我们来开始创建子弹*/
             var interval=setInterval(function(){
+
+                console.log("fdsafdsafdsafdsa"+that.enemyTank);
                if(that.bulletCount>0)
                {
                    new tankAttribute.EnemyBullet(that,myTank).createBullet();
                    console.log("现在我开始创建子弹了");
                }
+                if(that.enemyTank==null)
+                clearInterval(interval);
             },1000);
         }
         /*开始真正的创建坦克*/
